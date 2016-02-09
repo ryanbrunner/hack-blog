@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>My Awesome Blog</title>
   <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -9,7 +9,15 @@
 </head>
 <body>
 
-<%= yield %>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ryan's Awesome Blog!</a>
+  </div>
+</nav>
+
+<div class='container'>
+  <%= yield %>
+</div>
 
 </body>
 </html>

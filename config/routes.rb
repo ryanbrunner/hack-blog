@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  resources :posts
+  root to: 'posts#index'
+  
+  get '💩' => 'posts#💩'
+  # GET /posts
+  # POST /posts
+  # GET /posts/1
+  # GET /posts/2
+  # DELETE /posts/1
+  # PUT /posts/1
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

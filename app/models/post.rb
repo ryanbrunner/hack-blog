@@ -3,8 +3,8 @@ class Post < ActiveRecord::Base
         content.first(100) + "..."
     end
     
-    def ==(other)
-       self.title == other.title 
+    def to_s
+        self.title
     end
     
     def by?(author)
