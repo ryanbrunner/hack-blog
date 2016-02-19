@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  resources :users
   resources :posts
   root to: 'posts#index'
   
-  get '💩' => 'posts#💩'
+  
+  # get '/posts/:id/stats' => 'posts#stats'
   # GET /posts
   # POST /posts
   # GET /posts/1

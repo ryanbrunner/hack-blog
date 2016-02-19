@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    if params[:q].present?
+      @posts = Post.entitled(params[:q])
+    else
+      @posts = Post.all
+    end
   end
   
   def show

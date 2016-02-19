@@ -12,6 +12,10 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Ryan's Awesome Blog!</a>
+    <%= form_tag root_path, method: "GET" do %>
+      <%= text_field_tag :q, params[:q], placeholder: "Search for Posts" %>
+      <%= submit_tag "Search" %>
+    <% end %>
   </div>
 </nav>
 
