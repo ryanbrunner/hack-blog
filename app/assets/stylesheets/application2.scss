@@ -1,0 +1,7 @@
+ $text-color: grey;
+ $background-color: red;
+ 
+ @mixin background {
+     background-color: $background-color;
+ }
+ 

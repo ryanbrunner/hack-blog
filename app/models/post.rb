@@ -2,6 +2,8 @@ class Post < ActiveRecord::Base
     # Validate presence - invalid if title is nil or empty
     validates :title, presence: true
     
+    # validates :url, format: /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+    
     # Validate that this value is in a list
     validates :category, inclusion: { in: ['news', 'fun'] }
     

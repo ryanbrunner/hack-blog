@@ -1,12 +1,3 @@
-<%= form_for @post do |f| %>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-    <%= f.label :content %>
-    <%= f.text_area :content %>
-    <%= f.label :author %>
-    <%= f.text_field :author %>
-    <%= f.label :category %>
-    <%= f.text_field :category %>
+<h1>Create a new post</h1>
 
-    <%= f.submit %>
-<% end %>
+<%= render 'form' %>

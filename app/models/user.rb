@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
-    validates :email, presence: { allow_nil: true }, 
-                      uniqueness: { allow_nil: true }
+    validates :email, presence: true, 
+                      uniqueness: true
                       
     validate :at_least_18
     validate :email_domain
