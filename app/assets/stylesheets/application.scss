@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *
  */
  
  $text-color: grey;
@@ -18,8 +19,7 @@
  @mixin background {
      background-color: $background-color;
  }
- 
- @import 'whatever';
+
  @import 'scaffolds';
  
  @import 'posts';

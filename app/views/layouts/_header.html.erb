@@ -1,10 +1,10 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <%= image_tag "ryan.png", height: 32 %>
+      <%= image_tag "ryan.png", height: 20, style: 'float: left' %>
       Ryan's Awesome Blog!
     </a>
-    <%= form_tag root_path, method: "GET" do %>
+    <%= form_tag root_path, method: "GET", style: 'float: right' do %>
       <%= text_field_tag :q, params[:q], placeholder: "Search for Posts" %>
       <%= submit_tag "Search" %>
     <% end %>

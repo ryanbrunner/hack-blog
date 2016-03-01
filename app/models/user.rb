@@ -5,6 +5,10 @@ class User < ActiveRecord::Base
     validate :at_least_18
     validate :email_domain
     
+    has_many :posts
+    has_many :comments
+    belongs_to :profile
+    
     def email_domain
       if not email.ends_with?("ryanbrunner.ca")
         errors.add(:email, "must be from ryanbrunner.ca")          
