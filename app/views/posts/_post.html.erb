@@ -6,4 +6,9 @@
     <small class='byline'>
         By <%= post.author %> on <%= post.created_at %>
     </small>
+    <div>
+        <%= pluralize(post.likes.count, "person") %> 
+        <%= post.likes.count == 1 ? "likes" : "like" %> 
+        this.
+    </div>
 </div>
