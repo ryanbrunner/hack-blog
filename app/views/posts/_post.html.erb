@@ -4,7 +4,7 @@
     </h2>
     <p><%= post.lead %></p>
     <small class='byline'>
-        By <%= post.author %> on <%= post.created_at %>
+        By <%= post.author %> <%= post.created_at.to_s(:short) %>.
     </small>
     <div>
         <%= pluralize(post.likes.count, "person") %> 

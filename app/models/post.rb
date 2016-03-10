@@ -20,7 +20,7 @@ class Post < ActiveRecord::Base
     end
     
     def author
-      user.name if user
+      user.email if user
     end
     
     def lead

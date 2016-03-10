@@ -19,9 +19,6 @@
  @mixin background {
      background-color: $background-color;
  }
-
- @import 'scaffolds';
  
  @import 'posts';
- @import 'users';
  

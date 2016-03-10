@@ -17,10 +17,6 @@
         <%= f.text_area :content %>
     </div>
     <div>
-        <%= f.label :user %>
-        <%= f.collection_select :user_id, User.all, :id, :name %>
-    </div>
-    <div>
         <%= f.label :category %>
         <%= f.text_field :category %>
     </div>

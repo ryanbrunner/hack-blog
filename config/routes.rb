@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :profiles
   resources :comments
-  resources :users
   resources :posts
-  root to: 'posts#index'
+  root 'posts#index'
   
   
   # get '/posts/:id/stats' => 'posts#stats'
