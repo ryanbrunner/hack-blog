@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   
   def index
     if params[:q].present?
-      @ppsts = Post.entitled(params[:q])
+      @posts = Post.entitled(params[:q])
     else
       @posts = Post.all
     end

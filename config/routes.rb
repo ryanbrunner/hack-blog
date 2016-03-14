@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_scope :user do
+    match '/twitter_signup' => 
+          'users/omniauth_callbacks#twitter_submit', via: [:post, :patch]
+  end
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+  
   resources :profiles
   resources :comments
   resources :posts
