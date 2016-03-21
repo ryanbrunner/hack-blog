@@ -6,6 +6,8 @@ gem 'rails', '4.2.5'
 
 gem 'dotenv-rails'
 
+gem 'active_model_serializers'
+
 # Autentication
 gem 'devise'
 gem 'omniauth-twitter'
